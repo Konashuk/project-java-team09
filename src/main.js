@@ -5,4 +5,4 @@ import './js/top-books';
 import './js/support-ukraine';
 import './js/dark-theme';
 import './js/book-modal/modal-main';
-// import './js';
+import './js/scrol-up';

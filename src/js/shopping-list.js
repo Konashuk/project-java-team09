@@ -1,5 +1,3 @@
-
-
 // Ця змінна для симуляції даних в localStorage
 // Видалити після написання фунції додавання в localStorage
 
@@ -235,15 +233,11 @@
 
 // -- Все що вище видалити після написання фунції додавання в localStorage --//
 
-
-
-
 import trash from '../images/icons.svg';
 import amazon from '../images/amazon1.png';
 import amazon2 from '../images/amazon2.png';
 import applebooks from '../images/applebook1.png';
 import applebooks2 from '../images/applebook2.png';
-
 
 const bookList = document.querySelector('.list-books');
 const storedBooks = JSON.parse(localStorage.getItem('storedBooks')) || [];
@@ -268,7 +262,7 @@ function marcupListBooks(storedBooks) {
           description =
             'Sorry, but this book does not have an accessible description. Try reading it on the website of one of the shops';
         }
-        
+
         return `<li class="shopping-list-card">
         <img class="shopping-list-img" src="${book_image}" alt="${title}" />
         <div class="shopping-list-description-thumb">
@@ -310,8 +304,6 @@ function marcupListBooks(storedBooks) {
     .join('');
 }
 
-
-
 // -- Функція видалення картки книги зі сторінки та з localStorage --//
 
 const deleteButtons = document.querySelectorAll('.js-trash');
@@ -319,20 +311,18 @@ const deleteButtons = document.querySelectorAll('.js-trash');
 deleteButtons.forEach(button => {
   button.addEventListener('click', event => {
     const bookId = event.currentTarget.dataset.id;
-    deleteBook(bookId); 
+    deleteBook(bookId);
   });
 });
 
-
 function deleteBook(bookId) {
- 
   const bookIndex = storedBooks.findIndex(book => book._id === bookId);
 
   if (bookIndex !== -1) {
     storedBooks.splice(bookIndex, 1);
 
     localStorage.setItem('storedBooks', JSON.stringify(storedBooks));
-            updateBookList();
+    updateBookList();
   }
 }
 
@@ -344,26 +334,13 @@ function updateBookList() {
 
   if (storedBooks.length === 0) {
     bookList.style.display = 'none';
-    emptyPageMessage.style.display = 'block';
+    // emptyPageMessage.style.display = 'block';
   } else {
-    bookList.style.display = 'block';
+    // bookList.style.display = 'block';
     emptyPageMessage.style.display = 'none';
   }
 }
 
 updateBookList();
 
-
-
-
-
-
-
-
 // -- Функція повідомлення, коли на сторінці немає карток --//
-
-
-
-
-
-

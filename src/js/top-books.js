@@ -31,13 +31,10 @@ function createCard(data) {
       let limitedData;
       if (screenWidth < 768) {
         limitedData = arr.slice(0, 1); // Для мобільних пристроїв 1 книжка вряду
-        console.log(limitedData);
       } else if (screenWidth < 1440) {
         limitedData = arr.slice(0, 3); // Для планшетів 2 книжки в ряду
-        console.log(limitedData);
       } else {
         limitedData = arr;
-        console.log(limitedData);
       }
       return `
 
@@ -78,7 +75,6 @@ async function pushMoreBooks(event) {
   if (event.target.classList.value === 'see-more-btn') {
     const category = event.target.parentNode.previousElementSibling;
     const data = await getBooksByCategory(category.textContent);
-    console.log(data);
     sectionBooks.innerHTML = '';
 
     renderBooksMarkup(data, category.textContent);

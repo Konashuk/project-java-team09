@@ -40,6 +40,13 @@
   line-height: 1.28;
   letter-spacing: -0.14px;
   text-transform: uppercase;
+  transition: background-color 0.3s; /* Додана анімація зміни кольору фону */
+}
+
+.see-more-btn:hover,
+.see-more-btn:hover {
+  background: #4f2ee8;
+  color: #ffffff;
 }
 
 .book-item-tittle.book-item-top {
@@ -82,7 +89,6 @@
 }
 
 .image-container {
-
   position: relative;
   overflow: hidden;
   margin-bottom: 14px;
@@ -123,6 +129,7 @@
 @media screen and (min-width: 1440px) {
   .books {
     width: 996px;
+    margin-top: 40px;
   }
 
   .category-title-top {

@@ -15,8 +15,7 @@
 @import url('./adaptive.css');
 @import url('./theme-dark.css');
 @import url('./root.css');
-
-
+@import url('./scrol-up.css');
 
 :root {
   font-family: 'DM Sans', sans-serif;
@@ -32,7 +31,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
 
   /*не меняются*/
   --black-color: #111;
@@ -142,8 +140,6 @@ body {
     padding-left: 24px;
     padding-right: 24px;
   }
-
-
 }
 
 @media screen and (min-width: 375px) {
