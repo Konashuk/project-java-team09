@@ -1,8 +1,6 @@
 import { getTopBooks, getBooksByCategory } from './API';
 import renderBooksMarkup from './selectedCategories';
 
-// import { pushBooksOnPage } from './selectedCategories';
-
 const sectionBooks = document.querySelector('.books');
 const allCategory = document.querySelector('.all-category');
 
