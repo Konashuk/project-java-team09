@@ -5,17 +5,17 @@
   |============================
 */
 
-@import url('./reset.css');
-@import url('./books.css');
-@import url('./header.css');
-@import url('./modal-window.css');
-@import url('./support-Ukraine.css');
-@import url('./categories.css');
-@import url('./top-books.css');
-@import url('./adaptive.css');
-@import url('./theme-dark.css');
-@import url('./root.css');
-@import url('./scrol-up.css');
+@import url('/reset.css');
+@import url('/books.css');
+@import url('/header.css');
+@import url('/modal-window.css');
+@import url('/support-Ukraine.css');
+@import url('/categories.css');
+@import url('/top-books.css');
+@import url('/adaptive.css');
+@import url('/theme-dark.css');
+@import url('/root.css');
+@import url('/scrol-up.css');
 
 :root {
   font-family: 'DM Sans', sans-serif;
